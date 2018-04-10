@@ -23,8 +23,11 @@ public class Hilos2 {
         Thread t3 = new Thread(param3);
         
         t1.start();
+        t1.setName("El que ingresa datos mientras piensa en ella");
         t2.start();
+        t2.setName("El que cuenta los segundos para verla de nuevo");
         t3.start();
+        t3.setName("El que se mete en todo");
     }
     
     
